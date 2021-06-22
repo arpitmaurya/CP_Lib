@@ -1,11 +1,8 @@
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
 
 import java.io.DataInputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Scanner;
-import java.util.StringTokenizer;
+
 
 public class ${NAME} {
 
@@ -29,32 +26,35 @@ public class ${NAME} {
     static void Solution() throws IOException {
         String inp[] = rb.readLine().split(" ");
 
-    
-    
-    
-    
+    }
+     
+      static int[] convStrngArrToInt(String[] arr ){
+        int arr_lenght = arr.length;
+        int[] int_arr = new int[arr_lenght];
+        for(int i = 0 ; i < arr_lenght;i++){
+            int_arr[i] = Integer.parseInt(arr[i]);
+        }
+        return int_arr;
     }
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    //=========================== READER--------------->
+    static boolean isPresent(int[] a, int value) {
+        boolean isPresent= false;
+        for (int i : a) {
+            if (i == value) {
+                isPresent =true;
+                break;
+
+            }
+
+        }
+        return isPresent;
+    }
+     
+    static boolean isEven(long n){
+        return (n ^ 1) == n + 1;
+    }
+ 
+
 
     static class Reader {
         final private int BUFFER_SIZE = 1 << 16;
@@ -76,7 +76,7 @@ public class ${NAME} {
         }
 
         public String readLine() throws IOException {
-            byte[] buf = new byte[64]; // line length
+            byte[] buf = new byte[1000000]; // line length
             int cnt = 0, c;
             while ((c = read()) != -1) {
                 if (c == '\n') {
