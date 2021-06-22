@@ -3,10 +3,24 @@ import java.io.DataInputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-
 public class prob3 {
+   /** 
+   
+   Question : Problem Description :-
+   
+     You are given a DNA sequence: a string consisting of 
+    characters A, C, G, and T. Your task is to find the longest repetition 
+    in the sequence. This is a maximum-length substring containing 
+    only one type of character.
+   
+   **/
+    
+        
     // Repetitions (Problem 3 CSES) 
     // LINK > https://cses.fi/problemset/task/1069
+    
+    
+    
     static Reader rb;
 
     public static void main(String[] args)
