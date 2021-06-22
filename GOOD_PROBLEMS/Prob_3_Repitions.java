@@ -5,7 +5,8 @@ import java.io.IOException;
 
 
 public class prob3 {
-    //Repetitions
+    // Repetitions (Problem 3 CSES) 
+    // LINK > https://cses.fi/problemset/task/1069
     static Reader rb;
 
     public static void main(String[] args)
